@@ -142,7 +142,7 @@ Run the migration:
 docker compose run --rm api alembic upgrade head
 ```
 
-### Launch Consuma
+### Launch API CRON MAIN APP
 ```bash
 docker compose up -d
 ```
@@ -161,7 +161,7 @@ docker compose up -d
 
 ## Crash Recovery Protocol
 
-**CONSUMA** is designed to handle server disruptions gracefully.
+**API CRON JOB** is designed to handle server disruptions gracefully.
 
 *   **Ghost Tasks:** On startup, the scheduler identifies runs stuck in a `RUNNING` state (from a previous crash) and marks them as `INTERRUPTED`.
 *   **Throttled Catch-up:** If the server was offline, the scheduler identifies missed cycles and dispatches them in a throttled burst (100ms delay) to avoid 429 Rate Limit errors from targets.
