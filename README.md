@@ -1,4 +1,4 @@
-# CONSUMA — API Cron Job Tool
+# API Cron Job Tool
 
 A Docker-based scheduler that fires HTTP requests on a cron-like interval, tracks every run in PostgreSQL, exposes Prometheus metrics, and recovers cleanly from crashes.
 
