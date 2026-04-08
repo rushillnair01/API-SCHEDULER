@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Docker
+.docker/
+# If your DB data is in a local folder, ignore it:
+pgdata/
+
+# OS
+.DS_Store

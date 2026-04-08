@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+celery
+redis
+httpx
+prometheus_client
+alembic
+python-dotenv
+streamlit
+pandas
+requests
