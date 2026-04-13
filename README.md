@@ -85,8 +85,8 @@ services:
     volumes:
       - .:/app
     environment:
-      - DATABASE_URL=postgresql://user:password@db:5432/scheduler_db
-      - REDIS_URL=redis://redis:6379/0
+      - DATABASE_URL=${DATABASE_URL}
+      - REDIS_URL=${REDIS_URL}
     depends_on:
       - db
       - redis
